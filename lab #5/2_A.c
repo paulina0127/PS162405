@@ -6,10 +6,10 @@ int ciag(int n) {
         return 2;
 
     if (n % 2 == 0)
-        return ciag(n-1) + n;
+        return ciag(n/2-1) + n/2;
 
     if (n % 2 != 0)
-        return 2 * ciag(n-1) - n;
+        return 2 * ciag(n-1) - (n-1)/2;
 }
 
 int main() {
